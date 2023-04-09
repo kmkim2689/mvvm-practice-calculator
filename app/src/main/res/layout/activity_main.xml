@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.practice.calculator.CalculatorViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/num1_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="num1"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/num2_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="num2"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="결과"
+            android:textSize="20sp"
+            android:text="@{viewModel.result.toString()}"/>
+    </LinearLayout>
+
+
+
+</layout>
