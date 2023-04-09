@@ -4,7 +4,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.practice.calculator.CalculatorViewModel" />
+            type="com.practice.calculator.ver1.CalculatorViewModel" />
     </data>
 
     <LinearLayout
@@ -31,6 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
+        <!-- 자동으로 뷰에 반영되도록, @{} 안에 LiveData 변수를(= 값이 변경되는 족족 화면에 반영되어야 하는 내용) 집어넣는다.-->
         <TextView
             android:id="@+id/result"
             android:layout_width="wrap_content"
